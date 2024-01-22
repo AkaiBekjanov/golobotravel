@@ -1,0 +1,71 @@
+:root{
+  --Blackish-Green:#112211;
+}
+
+.head{
+  padding:21px 0px;
+  background-color: #FFF;
+}
+.inner{
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+.row{
+   display: flex;
+   
+   align-items: center;
+   flex-direction: row;
+   gap:32px
+}
+
+.text{
+  display: flex;
+  align-items: center;
+  position: relative;
+  
+  color: var(--Blackish-Green, #121);
+/* Montserrat/Semibold/14px */
+font-family: Montserrat;
+font-size: 14px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+cursor: pointer;
+
+}
+.text::after{
+  content: "";
+  position: absolute;
+  bottom:-22px;
+  width: 0%;
+  height: 3px;
+  background-color: #8DD3BB;
+  cursor:auto;
+  transition: all 1s;
+}
+.text:hover::after{
+   width: 100%;
+   
+}
+.btn{
+  color: var(--Blackish-Green, #121);
+  /* Montserrat/Semibold/14px */
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  cursor: pointer;
+}
+.signup{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 102px;
+  height: 48px;
+  border-radius: 8px;
+  color:#FFF;
+background-color: #121;
+}
