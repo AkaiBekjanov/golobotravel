@@ -1,12 +1,12 @@
 import { useState } from "react";
 import React from "react";
 import "./App.css";
-import Header from "./components/Header/Header.jsx";
+import { Main } from "./pages/main/main";
 
 function App() {
   return (
     <>
-      <Header />
+      <Main />
     </>
   );
 }

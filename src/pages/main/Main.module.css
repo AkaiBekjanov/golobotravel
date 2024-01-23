@@ -1,0 +1,61 @@
+.main {
+  margin: 30px;
+  position: relative;
+  height: 700px;
+  
+  overflow: hidden;
+  border-radius: 0px 0px 24px 24px;
+}
+.bg {
+  position: absolute;
+  background-image: url("./img/bg.png");
+  background-size: cover;
+  background-position: center;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+ 
+  border-radius:24px;
+  z-index: -2;
+
+}
+.bgEffect {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.6) 100%
+  );
+ 
+}
+.center{
+    display: flex;
+    margin-top: 84px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.title {
+  color: var(--Neutrals, #fff);
+  text-align: center;
+  font-family: "TradeGothic LT Extended";
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+}
+.text {
+  color: var(--Neutrals, #fff);
+  text-align: center;
+  /* Montserrat/Semibold/20px */
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
